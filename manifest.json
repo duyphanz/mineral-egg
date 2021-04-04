@@ -9,14 +9,17 @@
     "128": "images/cool-egg.png"
   },
   "background": {
-    "scripts": ["background.js"]
+    "scripts": ["constants.js", "background.js"]
   },
+  "content_scripts": [
+    {
+      "matches": ["https://trade.vndirect.com.vn/chung-khoan/hose"],
+      "js": ["constants.js", "content_script.js"]
+    }
+  ],
   "browser_action": {
     "default_title": "Eggs!",
     "default_popup": "popup/popup.html"
-  },
-  "externally_connectable": {
-    "matches": ["https://trade.vndirect.com.vn/chung-khoan/*"]
   },
   "manifest_version": 2
 }

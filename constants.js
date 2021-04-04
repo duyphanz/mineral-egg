@@ -1,0 +1,5 @@
+var MESSAGES = {
+  START: "START",
+  TOGGLE: "TOGGLE",
+  NOTI: "NOTI",
+};
