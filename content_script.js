@@ -3,6 +3,8 @@ var eggs = {
   AAM: 10,
 };
 
+console.log("content script");
+
 // Listen messages from background/pop-up script
 chrome.runtime.onMessage.addListener((msg) => {
   const { type, payload } = msg;

@@ -1,3 +1,5 @@
+console.log("popup script");
+
 const targetSite = "https://trade.vndirect.com.vn/chung-khoan/hose";
 
 // Add onclick event listener to start button

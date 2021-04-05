@@ -1,3 +1,5 @@
+console.log("background script");
+
 chrome.runtime.onMessage.addListener(function (message, sender, response) {
   const { type, payload } = message;
 
