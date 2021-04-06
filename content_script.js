@@ -30,6 +30,7 @@ chrome.runtime.onMessage.addListener((msg) => {
 
             if (eggEl && +eggEl.innerText >= eggs[egg]) {
               matchingEggs.push(egg);
+              eggEl.style.color = "white";
               delete eggs[egg];
             }
           });
